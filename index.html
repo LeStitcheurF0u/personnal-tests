@@ -10,16 +10,14 @@
     <header>
         <aside id='home'></aside>
         <div class="trigger">
-            <span></span>
-            <span></span>
-            <span></span>
+            <img src="assets/img/logo.png" alt="Logo MyWebSoluce">
         </div>
         <menu>
             <ul>
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#realisation">Réalisations</a></li>
                 <li><a href="#prestation">Prestations</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </menu>
     </header>
@@ -37,5 +35,17 @@
 
     </main>
     <footer></footer>
+
+    <script>
+        const header = document.querySelector('header')
+        const trigger = document.querySelector('.trigger')
+        const menu = document.querySelector('menu')
+
+        trigger.addEventListener('click', () => {
+            header.classList.toggle('extend')
+            menu.classList.toggle('open');
+        })
+
+    </script>
 </body>
 </html>

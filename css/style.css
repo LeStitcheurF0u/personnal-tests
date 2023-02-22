@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import url(fonts.css);
 
 * {
     margin: 0;
@@ -17,4 +18,88 @@ body {
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
+    background: #feeacf;
+}
+
+header {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(238, 118, 51, 0.4);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(11.5px);
+        -webkit-backdrop-filter: blur(11.5px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: .4s ease-in-out;
+}
+header.extend{
+    width: 80%;
+}
+
+header .trigger {
+    width: 100px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+header .trigger img {
+    width: 70px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+menu {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ;
+    transition-delay: .3s;
+}
+
+menu.open{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+menu ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+
+menu ul li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+menu ul li a {
+    text-decoration: none;
+    color: #292929;
+    font-family: 'DunbarLow-Medium';
 }
