@@ -1,6 +1,14 @@
 @import url(reset.css);
 @import url(fonts.css);
 
+/* 
+############################################
+#                                          #
+#                RESET & SETUP             #
+#                                          #
+############################################
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -16,56 +24,68 @@ body {
     min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: #feeacf;
 }
 
+.bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    opacity: .2;
+    z-index: -1;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+############################################
+#                                          #
+#                  HEADER                  #
+#                                          #
+############################################
+*/
+
 header {
     position: fixed;
-    top: 30px;
-    left: 30px;
-    width: 100px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(238, 118, 51, 0.4);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(11.5px);
-        -webkit-backdrop-filter: blur(11.5px);
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-    transition: .4s ease-in-out;
-}
-header.extend{
-    width: 80%;
+    background: transparent;
+    border-bottom: 1px solid #292929;
 }
 
-header .trigger {
-    width: 100px;
+.header-item {
+    width: 100%;
     height: 100%;
-    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    
 }
 
-header .trigger img {
-    width: 70px;
+.header-item img {
+    width: 250px;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+
 menu {
-    width: 0;
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,12 +93,6 @@ menu {
     transition-delay: .3s;
 }
 
-menu.open{
-    width: 100%;
-    height: 100%;
-    visibility: visible;
-    opacity: 1;
-}
 
 menu ul {
     width: 100%;
@@ -101,5 +115,137 @@ menu ul li {
 menu ul li a {
     text-decoration: none;
     color: #292929;
-    font-family: 'DunbarLow-Medium';
+    font-family: 'DunbarLow-Light';
+    transition: .3s;
+}
+menu ul li a:hover{
+    color: #EE7633;
+}
+
+.header-item a:not(.logo) {
+    font-family: 'Dunbarlow-Light';
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #292929;
+    z-index: 2;
+    display: block;
+    width: fit-content;
+    height: auto;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    position: relative;
+    cursor: pointer;
+}
+.header-item a:not(.logo)::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: scaleX(0.2) scaleY(0.5) translate(250%, 100%);
+    border-top: solid 2px #292929;
+    border-left: solid 4px #292929;
+    transition: all .4s ease-in-out;
+}
+
+.header-item a:not(.logo)::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%) scaleX(0.2) scaleY(0.5);
+    border-bottom: solid 2px #333;
+    border-right: solid 4px #333;
+    transition: all .4s ease-in-out;
+}
+.header-item a:not(.logo):hover{
+    color: #EE7633;
+}
+
+.header-item a:not(.logo):hover::before {
+    transform: translate(0%, 0%) scaleX(1) scaleY(1);
+    border-top: solid 1px #EE7633;
+    border-left: solid 1px #EE7633;
+}
+
+.header-item a:not(.logo):hover::after {
+    transform: scaleX(1) scaleY(1) translate(0%, 0%);
+    border-bottom: solid 1px #EE7633;
+    border-right: solid 1px #EE7633;
+}
+
+
+/* 
+############################################
+#                                          #
+#                  HOME                    #
+#                                          #
+############################################
+*/
+
+#home{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home .blob {
+    width: 400px;
+}
+
+
+
+
+/* 
+############################################
+#                                          #
+#                  FOOTER                  #
+#                                          #
+############################################
+*/
+
+
+footer {
+    border-top: 1px solid #292929;
+    width: 90%;
+    height: 70px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer__top{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer__top a {
+    text-decoration: none;
+    color: #292929;
+    font-family: 'Dunbarlow-Light';
+    transition: .3s;
+}
+.footer__top a:hover{
+    color: #EE7633;
+}
+
+footer hr {
+    background: #EE7633;
+    width: 70%;
+    height: 1px;
 }
