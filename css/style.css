@@ -222,6 +222,13 @@ menu ul li a:hover{
     align-items: center;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+h1 strong {
+    font-family: 'DunbarLow-Medium';
+}
+
 /* #home .blob {
     transform: scale(0.5);
 } */
