@@ -82,7 +82,7 @@ hr {
 
 
 nav {
-    position: fixed;
+    position: absolute;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
@@ -97,6 +97,7 @@ nav {
 }
 
 nav.sticky{
+    position: fixed;
     justify-content: space-around;
     background: rgba(41, 41, 41, 0.6);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -487,6 +488,7 @@ footer {
 
     nav {
         position: fixed;
+        top: auto;
         bottom: 0;
         width: 100%;
         height: 60px;
