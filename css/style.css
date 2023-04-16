@@ -191,52 +191,42 @@ header>img {
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    transform: rotate(-2deg) skew(10deg);
+    font-family: 'DunbarLow-Light';
+    color: #feeacf;
+    text-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 #header-content aside h1 {
-    font-family: 'DunbarLow-Light';
-    text-transform: uppercase;
-    font-size: 4rem;
-    color: #EE7633;
-    text-shadow: 0 0 5px #feeacf;
-    text-align: center;
+    font-size: 2rem;
+    /* background: rgba(41, 41, 41, 0.6); */
+    /* backdrop-filter: blur(10px); */
+    /* -webkit-backdrop-filter: blur(4.5px); */
 }
 
 #header-content aside h1>strong {
     font-family: 'DunbarLow-Medium';
-    font-size: 4rem;
-    color: #EE7633;
-    text-shadow: 0 0 5px #feeacf;
-    text-align: center;
 }
 
 #header-content aside h2 {
-    font-family: 'DunbarLow-Light';
-    font-size: 2rem;
-    color: #EE7633;
-    text-shadow: 0 0 5px #292929;
-    text-align: center;
+    font-size: 1.5rem;
+
 }
 
 #header-content aside p {
-    font-family: 'DunbarLow-Light';
-    font-size: 1.5rem;
-    color: #EE7633;
-    text-shadow: 0 0 5px #292929;
-    text-align: center;
+    font-size: 0.8rem;
 }
 
 
 #header-content aside a {
-    font-family: 'DunbarLow-Light';
-    font-size: 1.2rem;
+    font-family: 'DunbarLow-Medium';
+    text-transform: uppercase;
+    font-size: 1rem;
     color: #EE7633;
     text-shadow: 0 0 5px #292929;
     text-decoration: none;
     padding: 10px;
-    border: 2px solid #EE7633;
-    border-radius: 5px;
+    border-top: 2px solid #EE7633;
+    border-bottom: 2px solid #EE7633;
     transition: all .2s;
 }
 
