@@ -8,12 +8,12 @@ window.addEventListener('scroll', () => {
     let topElementToTopViewport = realisation.getBoundingClientRect().top
 
 
-    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.90){
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.95){
         if(clientWidth > 900){
             nav.classList.add('sticky')
         }
     }
-    if(scrollTop < (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.90){
+    if(scrollTop < (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.95){
         if(clientWidth > 900 || nav.classList.contains('sticky')){
             nav.classList.remove('sticky')
         }
