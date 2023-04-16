@@ -6,6 +6,12 @@
     <title>MyWebSoluce - Accueil</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <div class="bg">
@@ -54,23 +60,37 @@
 
     <header>
       <nav>
-        <ul>
-          <li><a href="">Réalisations</a></li>
-          <li><a href="">Prestations</a></li>
-        </ul>
-        <a href="">
-          <img src="assets/img/logo.png" alt="Logo MyWebSoluce" />
+        <a href="" class="logo">
+          <img src="assets/img/logo-ligne.png" alt="Logo MyWebSoluce" />
         </a>
-        <a href="" class="contact"> Me Contacter </a>
+        <ul>
+          <li>
+            <a href="">
+              <i class="fa-solid fa-code icon"></i>
+              <span>Réalisations</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-solid fa-file-invoice-dollar icon"></i>
+              <span>Prestations</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-solid fa-message icon"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
       </nav>
-      <img src="assets/img/bg.webp" alt="Hero MyWebSoluce" />
+      <img src="assets/img/bg2.webp" alt="Hero MyWebSoluce" id="hero" />
       <div id="header-content">
         <div class="blob">
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 500 500"
-            width="100%"
             id="blobSvg"
             style="opacity: 1"
             filter="blur(qs20px)"
@@ -104,10 +124,10 @@
           </svg>
         </div>
         <aside>
-          <h1>function getTitle("<img src="assets/img/logo-ligne.png" />")</h1>
+          <h1>console.log("<span>MY<strong>WEB</strong>SOLUCE</span>")</h1>
           <h2>Créons ensemble le site web qui vous ressemble</h2>
           <p>Le web accessible à tous et pour tous</p>
-          <a href="#realisation">Mes réalisations</a>
+          <a href="#realisation">Me contacter</a>
         </aside>
       </div>
     </header>
