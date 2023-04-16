@@ -380,7 +380,7 @@ header {
 }
 .price-container span:first-child {
     margin-top: 10px;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
 }
 
@@ -401,7 +401,7 @@ header {
 .list {
     display: flex;
     align-items: center;
-    justify-content: ce;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -423,6 +423,7 @@ header {
 .list p {
     display: block;
     font-family: sans-serif;
+    font-size: 0.95rem;
 }
 
 .button-container {
@@ -483,7 +484,7 @@ header {
 
 
 .other h4 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     margin: 0;
     text-transform: uppercase;
@@ -500,7 +501,8 @@ header {
 .other__content-item p {
     width: 100%;
     height: 100%;
-    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .other__content-item .price-container {
