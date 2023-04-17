@@ -229,28 +229,21 @@ header {
     text-shadow: 5px 5px 10px #292929;
 }
 
-#header-content aside img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: auto;
-}
-
 #header-content aside h1 {
-    font-size: 3rem;
+    font-size: 5.5rem;
     color: #EE7633;
     text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5);
+    letter-spacing: 10px;
 }
 
 
 #header-content aside h1 strong {
     font-family: 'DunbarLow-Medium';
+    padding: 2px;
 }
 
 #header-content aside h2 {
     font-size: 1.4rem;
-
 }
 
 #header-content aside p {
