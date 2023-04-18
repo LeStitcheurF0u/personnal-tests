@@ -231,8 +231,21 @@ header {
 
 #header-content aside h1 {
     font-size: 5.5rem;
-    color: #EE7633;
-    text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5);
+    color: #feeacf;
+    text-shadow: 1px 1px 1px #919191,
+            1px 2px 1px #919191,
+            1px 3px 1px #919191,
+            1px 4px 1px #919191,
+            1px 5px 1px #919191,
+            1px 6px 1px #919191,
+            1px 7px 1px #919191,
+            1px 8px 1px #919191,
+            1px 9px 1px #919191,
+            1px 10px 1px #919191,
+            1px 18px 6px rgba(239, 117, 52, 0.4),
+            1px 22px 10px rgba(239, 117, 52, 0.2),
+            1px 25px 35px rgba(239, 117, 52, 0.2),
+            1px 30px 60px rgba(239, 117, 52, 0.4);
     letter-spacing: 10px;
 }
 
@@ -380,8 +393,7 @@ header {
     justify-content: center;
     align-items: flex-end;
     gap: 4px;
-    font-size: 4rem;
-    line-height: 5rem;
+    font-size: 3rem;
 }
 .price-container span:first-child {
     margin-top: 10px;
@@ -610,9 +622,19 @@ footer {
 
     #header-content {
         flex-flow: column nowrap;
-        justify-content:center;
+        justify-content:space-around;
         align-items: center;
         gap: 30px;
+    }
+
+    #header-content aside {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
 
     #header-content aside h1 {
