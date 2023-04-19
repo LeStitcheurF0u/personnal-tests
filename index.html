@@ -139,10 +139,11 @@
     <main>
       <section id="realisation">
         <div class="swiper mySwiper">
+          <h2>Mes Réalisations</h2>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <figure>
-                <img src="assets/img/lacapsule.png" alt="" />
+                <img src="assets/img/capsule.png" alt="La capsule" />
                 <figcaption>
                   <span>La Capsule V3</span>
                   <a href="https://lacapsule.github.io/V3">Voir le projet</a>
@@ -151,7 +152,7 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <img src="assets/img/moco.png" alt="" />
+                <img src="assets/img/moco.png" alt="Morlaix Communauté" />
                 <figcaption>
                   <span>Centre de ressource pour Morlaix Communauté</span>
                   <a href="https://moco.mywebsoluce.fr">Voir le projet</a>
@@ -160,7 +161,7 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <img src="assets/img/quizz.png" alt="" />
+                <img src="assets/img/quizz.png" alt="Quizz" />
                 <figcaption>
                   <span>Quizz créé pour une expérimentation IBEP</span>
                   <a href="https://lestitcheurf0u.github.io/Quizz/">Voir le projet</a>
@@ -169,14 +170,20 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <img src="assets/img/bg3.webp" alt="" />
-                <figcaption>Slide 4</figcaption>
+                <img src="assets/img/cdr_capsule.png" alt="Centre de ressource La Capsule" />
+                <figcaption>
+                  <span>Partie Back-End Centre de ressources La Capsule</span>
+                  <a href="https://cdr.lacapsule.org">Voir le projet</a>
+                </figcaption>
               </figure>
             </div>
             <div class="swiper-slide">
               <figure>
-                <img src="assets/img/bg4.webp" alt="" />
-                <figcaption>Slide 5</figcaption>
+                <img src="assets/img/absumm.png" alt="Absumm" />
+                <figcaption>
+                  <span>Site E-Commerce Absumm</span>
+                  <a href="https://absumm.mywebsoluce.fr">Voir le projet</a>
+                </figcaption>
               </figure>
             </div>
           </div>
@@ -224,9 +231,6 @@
                 </li>
               </ul>
             </div>
-            <div class="button-container">
-              <button>En savoir plus</button>
-            </div>
           </div>
           <div class="pack-container">
             <div class="pack-container__header">
@@ -258,9 +262,6 @@
                 </li>
               </ul>
             </div>
-            <div class="button-container">
-              <button type="button">En savoir plus</button>
-            </div>
           </div>
           <div class="pack-container">
             <div class="pack-container__header">
@@ -291,9 +292,6 @@
                   <p>Fonctionnalités standards au besoin d'un e-commerce</p>
                 </li>
               </ul>
-            </div>
-            <div class="button-container">
-              <button type="button">En savoir plus</button>
             </div>
           </div>
           <div class="pack-container">
@@ -331,9 +329,6 @@
                   </p>
                 </li>
               </ul>
-            </div>
-            <div class="button-container">
-              <button type="button">En savoir plus</button>
             </div>
           </div>
         </div>
@@ -397,7 +392,71 @@
           </div>
         </section>
       </section>
-      <section id="contact"></section>
+      <section id="contact">
+        <h2>Me contacter</h2>
+        <div class="contact__content">
+          <aside class="contact-infos">
+            <div class="contact-infos__item">
+              <img src="assets/img/avatar.webp" alt="avatar">
+            </div>
+            <div class="contact-infos__item">
+              <i class="fa-solid fa-user"></i>
+              <p>Alexandre HAREL</p>
+            </div>
+            <div class="contact-infos__item">
+              <i class="fa-solid fa-phone"></i>
+              <p>07 66 08 64 57</p>
+            </div>
+            <div class="contact-infos__item">
+              <i class="fa-solid fa-envelope"></i>
+              <p>contact@mywebsoluce.fr</p>
+            </div>
+            <div class="contact-infos__item">
+              <i class="fa-solid fa-map-marker"></i>
+              <p>Landivisiau, Bretagne, France</p>
+            </div>
+          </aside>
+          <aside class="contact-form">
+            <form action="traitements/mails.php" method='post'>
+              <div class="contact-form__item">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" />
+              </div>
+              <div class="contact-form__item">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="preom" />
+              </div>
+              <div class="contact-form__item">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" />
+              </div>
+              <div class="contact-form__item">
+                <label for="subject">Sujet de votre message</label>
+                <select name="subject" id="subject">
+                  <option value="0">Veuillez sélectionner un sujet</option>
+                  <option value="1">Demande de devis offre "Copper"</option>
+                  <option value="2">Demande de devis offre "Iron"</option>
+                  <option value="3">Demande de devis offre "Gold"</option>
+                  <option value="4">Demande de devis offre "Diamand"</option>
+                  <option value="5">Demande de devis autre demande</option>
+                  <option value="6">Demande de renseignements</option>
+                  <option value="7">Autre</option>
+                </select>
+              </div>
+              <div class="contact-form__item">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+              <div class="contact-form__item">
+                <input type="hidden" name="honeypot">
+              </div>
+              <div class="contact-form__item">
+                <button type="submit">Envoyer</button>
+              </div>
+            </form>
+          </aside>
+        </div>
+      </section>
     </main>
     <footer>
       <section class="footer__top">
@@ -413,6 +472,7 @@
 
     <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
       const progressCircle = document.querySelector(".autoplay-progress svg");
       const progressContent = document.querySelector(".autoplay-progress span");
@@ -432,11 +492,11 @@
         },
         on: {
           autoplayTimeLeft(s, time, progress) {
-            progressCircle.style.setProperty("--progress", 1 - progress);
-            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            progressCircle.style.setProperty("--progress", 1 - progress)
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`
           }
         }
-      });
+      });      
     </script>
   </body>
 </html>
