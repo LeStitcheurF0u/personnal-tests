@@ -6,7 +6,7 @@ Développement du site web MyWebSoluce, entreprise de création de site web bas�
 
 ## Technologie utilisée
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://www.mywebsoluce.fr)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,php)](https://www.mywebsoluce.fr)
 
 ## Emoji de commit :
 
