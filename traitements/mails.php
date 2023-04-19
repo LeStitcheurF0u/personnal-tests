@@ -11,7 +11,7 @@ if (isset($_SERVER['HTTP_ORIGIN'])) {
                 switch ($_POST['subject']) {
                     case 0:
                         $_SESSION['error'] = "Vous n'avez pas choisi de sujet";
-                        header('location: index.html');
+                        header('location: index.php');
                 }
             }
         }

@@ -23,7 +23,7 @@ window.addEventListener('scroll', () => {
             nav.classList.remove('sticky')
         }
     }
-    if(scrollTop > (scrollTop + packsToTopViewport).toFixed() - clientHeight * 0.80){
+    if(scrollTop > (scrollTop + packsToTopViewport).toFixed() - clientHeight * 0.90){
         packs.classList.add('visible')
         other.classList.add('visible')
     }

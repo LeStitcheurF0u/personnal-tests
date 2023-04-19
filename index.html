@@ -93,8 +93,7 @@
         <aside>
           <h1>MY<strong>WEB</strong>SOLUCE</h1>
           <h2>Créons ensemble le site web qui vous ressemble</h2>
-          <p>Le web accessible à tous et pour tous</p>
-          <div class="btn-conteiner">
+          <div class="btn-container">
             <a class="btn-content" href="#">
               <span class="btn-title">ME CONTACTER</span>
               <span class="icon-arrow">
@@ -138,8 +137,8 @@
     </header>
     <main>
       <section id="realisation">
+        <h2>Mes Réalisations</h2>
         <div class="swiper mySwiper">
-          <h2>Mes Réalisations</h2>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <figure>
@@ -400,58 +399,65 @@
               <img src="assets/img/avatar.webp" alt="avatar">
             </div>
             <div class="contact-infos__item">
-              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user pre"></i>
               <p>Alexandre HAREL</p>
             </div>
             <div class="contact-infos__item">
-              <i class="fa-solid fa-phone"></i>
+              <i class="fa-solid fa-phone pre"></i>
               <p>07 66 08 64 57</p>
             </div>
             <div class="contact-infos__item">
-              <i class="fa-solid fa-envelope"></i>
+              <i class="fa-solid fa-envelope pre"></i>
               <p>contact@mywebsoluce.fr</p>
             </div>
             <div class="contact-infos__item">
-              <i class="fa-solid fa-map-marker"></i>
+              <i class="fa-solid fa-location-dot pre"></i>
               <p>Landivisiau, Bretagne, France</p>
+            </div>
+            <div class="contact-infos__socials">
+              <a href="">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
             </div>
           </aside>
           <aside class="contact-form">
             <form action="traitements/mails.php" method='post'>
+              <p>Une question ? Un projet ? Envoyez moi un message</p>
               <div class="contact-form__item">
                 <label for="nom">Nom</label>
-                <input type="text" id="nom" />
+                <input type="text" id="nom" required/>
               </div>
               <div class="contact-form__item">
                 <label for="prenom">Prénom</label>
-                <input type="text" id="preom" />
+                <input type="text" id="prenom" required/>
               </div>
               <div class="contact-form__item">
                 <label for="mail">Email</label>
-                <input type="email" id="mail" />
+                <input type="email" id="mail" required/>
               </div>
               <div class="contact-form__item">
                 <label for="subject">Sujet de votre message</label>
-                <select name="subject" id="subject">
+                <select name="subject" id="subject" required>
                   <option value="0">Veuillez sélectionner un sujet</option>
-                  <option value="1">Demande de devis offre "Copper"</option>
-                  <option value="2">Demande de devis offre "Iron"</option>
-                  <option value="3">Demande de devis offre "Gold"</option>
-                  <option value="4">Demande de devis offre "Diamand"</option>
-                  <option value="5">Demande de devis autre demande</option>
-                  <option value="6">Demande de renseignements</option>
-                  <option value="7">Autre</option>
+                  <option value="1">Demande de devis</option>
+                  <option value="2">J'ai un projet web</option>
+                  <option value="3">Demande de renseignements</option>
+                  <option value="4">Autre</option>
                 </select>
               </div>
               <div class="contact-form__item">
                 <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
+                <textarea name="message" id="message" required></textarea>
               </div>
               <div class="contact-form__item">
                 <input type="hidden" name="honeypot">
               </div>
-              <div class="contact-form__item">
+              <div class="contact-form__buttons">
                 <button type="submit">Envoyer</button>
+                <button type="reset">Recommencer</button>
               </div>
             </form>
           </aside>
@@ -461,13 +467,14 @@
     <footer>
       <section class="footer__top">
         <a href="">Mentions Légales</a>
-        <span>-</span>
         <a href="">CGU</a>
-        <span>-</span>
         <a href="">Partenaires</a>
+        <a href="https://github.com/LeStitcheurF0u/personnal-tests">Code source</a>
       </section>
       <hr />
-      <section class="footer__bottom"></section>
+      <section class="footer__bottom">
+        &copyMyWebSoluce - 2023 - Tous droits réservés
+      </section>
     </footer>
 
     <script src="js/app.js"></script>
