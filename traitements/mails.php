@@ -12,6 +12,23 @@ if (isset($_SERVER['HTTP_ORIGIN'])) {
                     case 0:
                         $_SESSION['error'] = "Vous n'avez pas choisi de sujet";
                         header('location: index.php');
+                        break;
+                    case 1:
+                        $subject = "Demande de devis";
+                        break;
+                    case 2:
+                        $subject = "J'ai un projet web";
+                        break;
+                    case 3:
+                        $subject = "Demande de renseignements";
+                        break;
+                    case 4:
+                        $subject = "Autre demande";
+                        break;
+                    default:
+                        $_SESSION['error'] = "Ce sujet n'est pas valide";
+                        header('location: index.php');
+                        break;
                 }
             }
         }
