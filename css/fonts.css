@@ -7,3 +7,8 @@
     font-family: 'DunbarLow-Medium';
     src: url(../assets/fonts/DunbarLow-Medium/DunbarLow-Medium.ttf);
 }
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
