@@ -1,5 +1,27 @@
 @import url(reset.css);
-@import url(fonts.css);
+
+/* 
+############################################
+#                                          #
+#                   FONTS                  #
+#                                          #
+############################################
+*/
+@font-face {
+    font-family: 'DunbarLow-Light';
+    src: url(../assets/fonts/DunbarLow-Light/DunbarLow-Light.ttf);
+}
+
+@font-face {
+    font-family: 'DunbarLow-Medium';
+    src: url(../assets/fonts/DunbarLow-Medium/DunbarLow-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
 
 /* 
 ############################################
@@ -1120,6 +1142,10 @@ footer {
     footer {
         height: auto;
         padding-bottom: 70px;
+    }
+
+    .footer__bottom .partenaires {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
