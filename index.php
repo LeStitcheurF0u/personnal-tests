@@ -8,12 +8,32 @@ session_start();
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>MyWebSoluce</title>
+  <meta name="title" content="MyWebSoluce">
   <meta name="description" content="MyWebSoluce entreprise de création de sites web implenté dans le Finistère, en Bretagne">
-  <title>MyWebSoluce - Accueil</title>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mywebsoluce.fr/">
+  <meta property="og:title" content="MyWebSoluce">
+  <meta property="og:description" content="MyWebSoluce entreprise de création de sites web implenté dans le Finistère, en Bretagne">
+  <meta property="og:image" content="assets/img/bannière_mws.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.mywebsoluce.fr/">
+  <meta property="twitter:title" content="MyWebSoluce">
+  <meta property="twitter:description" content="MyWebSoluce entreprise de création de sites web implenté dans le Finistère, en Bretagne">
+  <meta property="twitter:image" content="assets/img/bannière_mws.png">
+
+
   <link rel="stylesheet" href="css/style.css?ts=<?= time(); ?>" />
   <link rel="shortcut icon" href="assets/img/logo.webp" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- Matomo -->
   <script>
     var _paq = window._paq = window._paq || [];
@@ -87,7 +107,7 @@ session_start();
     <div id="header-content">
       <aside>
         <h1>MY<strong>WEB</strong>SOLUCE</h1>
-        <h2>Créons ensemble le site web qui vous ressemble</h2>
+        <h2 class="header-content-text">Créons ensemble le site web qui vous ressemble</h2>
         <div class="btn-container">
           <a class="btn-content" href="#contact">
             <span class="btn-title">ME CONTACTER</span>
