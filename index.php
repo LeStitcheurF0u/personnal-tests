@@ -11,21 +11,9 @@ session_start();
   <meta name="description" content="MyWebSoluce entreprise de création de sites web implenté dans le Finistère, en Bretagne">
   <title>MyWebSoluce - Accueil</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="assets/img/logo.webp" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7KKJVJ0THC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-7KKJVJ0THC');
-  </script>
 </head>
 
 <body>
@@ -52,7 +40,7 @@ session_start();
   <header>
     <nav>
       <a href="" class="logo">
-        <img src="assets/img/logo-ligne.png" alt="Logo MyWebSoluce" />
+        <img src="assets/img/logo-ligne.webp" alt="Logo MyWebSoluce" />
       </a>
       <ul>
         <li>
@@ -104,7 +92,7 @@ session_start();
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <figure>
-              <img src="assets/img/capsule.png" alt="La capsule" />
+              <img src="assets/img/capsule.webp" alt="La capsule" loading="lazy" />
               <figcaption>
                 <span>La Capsule V3</span>
                 <a href="https://lacapsule.github.io/V3">Voir le projet</a>
@@ -113,7 +101,7 @@ session_start();
           </div>
           <div class="swiper-slide">
             <figure>
-              <img src="assets/img/moco.png" alt="Morlaix Communauté" />
+              <img src="assets/img/moco.webp" alt="Morlaix Communauté" loading="lazy" />
               <figcaption>
                 <span>Centre de ressource pour Morlaix Communauté</span>
                 <a href="https://moco.mywebsoluce.fr">Voir le projet</a>
@@ -122,7 +110,7 @@ session_start();
           </div>
           <div class="swiper-slide">
             <figure>
-              <img src="assets/img/quizz.png" alt="Quizz" />
+              <img src="assets/img/quizz.webp" alt="Quizz" loading="lazy" />
               <figcaption>
                 <span>Quizz créé pour une expérimentation IBEP</span>
                 <a href="https://lestitcheurf0u.github.io/Quizz/">Voir le projet</a>
@@ -131,7 +119,7 @@ session_start();
           </div>
           <div class="swiper-slide">
             <figure>
-              <img src="assets/img/cdr_capsule.png" alt="Centre de ressource La Capsule" />
+              <img src="assets/img/cdr_capsule.webp" alt="Centre de ressource La Capsule" loading="lazy" />
               <figcaption>
                 <span>Partie Back-End Centre de ressources La Capsule</span>
                 <a href="https://cdr.lacapsule.org">Voir le projet</a>
@@ -140,7 +128,7 @@ session_start();
           </div>
           <div class="swiper-slide">
             <figure>
-              <img src="assets/img/absumm.png" alt="Absumm" />
+              <img src="assets/img/absumm.webp" alt="Absumm" loading="lazy" />
               <figcaption>
                 <span>Site E-Commerce Absumm</span>
                 <a href="https://absumm.mywebsoluce.fr">Voir le projet</a>
@@ -372,10 +360,10 @@ session_start();
             <p>Landivisiau, Bretagne, France</p>
           </div>
           <div class="contact-infos__socials">
-            <a href="">
+            <a href="https://www.linkedin.com/in/alexandre-harel-a82521175/">
               <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="">
+            <a href="https://twitter.com/LeStitcheurFou">
               <i class="fa-brands fa-twitter"></i>
             </a>
           </div>
@@ -396,19 +384,19 @@ session_start();
       <h3>Partenaires</h3>
       <section class='partenaires'>
         <a href="https://www.lacapsule.org">
-          <img src="assets/img/logo_lacapsule.webp" alt="La Capsule logo" />
+          <img src="assets/img/logo_lacapsule.webp" alt="La Capsule logo" loading="lazy" />
           <span>La Capsule</span>
         </a>
         <a href="https://www.morlaix-communaute.bzh/">
-          <img src="assets/img/logo_morlaix_new2.png" alt="Morlaix Communauté Logo" />
+          <img src="assets/img/logo-mxco.webp" alt="Morlaix Communauté Logo" loading="lazy" />
           <span>Morlaix Communauté</span>
         </a>
         <a href="https://margarinecommunication.fr/">
-          <img src="assets/img/margarine.png" alt="Margarine Logo" />
+          <img src="assets/img/margarine.webp" alt="Margarine Logo" loading="lazy" />
           <span>Margarine - Agence de Communication</span>
         </a>
         <a href="https://www.goupil-ere.org/">
-          <img src="assets/img/goupil.png" alt="Goupil-ere Logo" />
+          <img src="assets/img/goupil.webp" alt="Goupil-ere Logo" loading="lazy" />
           <span>Goupil-ère</span>
         </a>
       </section>
