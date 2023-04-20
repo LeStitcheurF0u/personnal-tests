@@ -367,7 +367,13 @@ span.comment {
 span.orange {
     color: #f39c12;
 }
-
+span.orange a {
+    color: #f39c12;
+    text-decoration: none;
+    border-top: 1px solid #f39c12;
+    border-bottom: 1px solid #f39c12;
+}
+    
 span.green {
     color: #33cc33;
 }

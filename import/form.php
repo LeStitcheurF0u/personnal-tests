@@ -17,6 +17,8 @@
       unset($_SESSION['error']);
     endif;
     ?>
+    <div id="matomo-opt-out"></div>
+    <script src="https://matomo.mywebsoluce.fr/index.php?module=CoreAdminHome&action=optOutJS&divId=matomo-opt-out&language=auto&showIntro=1"></script>
     <div class="contact-form__item">
       <label for="nom">Nom</label>
       <input type="text" id="nom" name="nom" required />

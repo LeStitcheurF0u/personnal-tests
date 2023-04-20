@@ -39,7 +39,7 @@ if (isset($_SERVER['HTTP_ORIGIN'])) {
                             <p>$content</p>
                             <p>Vous pouvez répondre à $mail</p>";
 
-                $headers = "from : webmaster@mywebsoluce.fr" . "\r\n" .
+                $headers = "from : $from" . "\r\n" .
                     'Reply-To: ' . $mail . "\r\n" .
                     'X-Mailer : PHP/' . phpversion() . "\r\n" .
                     "Content-Type: text/html; charset=UTF-8";
