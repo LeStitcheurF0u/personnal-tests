@@ -553,7 +553,7 @@ header {
 .pack-container {
     position: relative;
     display: flex;
-    width: 450px;
+    width: 400px;
     height: 500px;
     flex-direction: column;
     justify-content: space-evenly;
@@ -594,7 +594,7 @@ header {
     justify-content: center;
     align-items: flex-end;
     gap: 4px;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .price-container span:first-child {
     margin-top: 10px;
@@ -627,9 +627,11 @@ header {
     border-radius: 50%;
     height: 30px;
     width: 30px;
+    margin-left: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    white-space: pre;
     color: #EE7633;
 }
 
@@ -640,8 +642,7 @@ header {
 
 .list p {
     display: block;
-    font-family: sans-serif;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
 }
 
 .button-container {
@@ -708,6 +709,8 @@ header {
 
 .spacing {
     margin: 30px;
+    width: 90%;
+    background: #EE7633;
 }
 
 
@@ -726,11 +729,25 @@ header {
     align-items: center;
     gap: 20px;
 }
+
+.price {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.other__content-item .icon {
+    display: block;
+    color: #EE7633;
+    font-size: 1em;
+}
+
 .other__content-item p {
     width: 100%;
     height: 100%;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .other__content-item .price-container {
@@ -758,7 +775,7 @@ header {
 
 .contact__content {
     width: 80%;
-    min-height: 100%;
+    height: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -776,11 +793,12 @@ header {
 .contact-form {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 100%;
     color: #292929;
+    gap: 20px;
     font-size: 1.5em;
 }
 
@@ -793,14 +811,12 @@ header {
 
 .contact-infos__item {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-
 
 .contact-infos__item .pre {
     color: #feeacf;
@@ -848,12 +864,15 @@ form p.error {
     color: rgb(95, 0, 0);
 }
 
+
+
 .contact-form__item {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: start;
     gap: 5px;
+    margin: 25px 0;
 }
 
 .contact-form__item label {

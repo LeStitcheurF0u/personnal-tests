@@ -327,50 +327,60 @@ session_start();
         <div class="other__content">
           <h4>Maintenance (Pack Zen)</h4>
           <div class="other__content-item">
-            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-check icon"></i>
             <p>
               Mises à jour une fois par mois, modification minueures (textes
               et images), conseil, formation à la prise en main
             </p>
-            <div class="price-container">
-              <span><strong>50€</strong>/mois ou <strong>500€</strong>/an</span>
+            <div class="price">
+              <div class="price-container">
+                50€<span>/mois</span>
+              </div>
+              <div class="price-container">
+                500€<span>/an</span>
+              </div>
             </div>
           </div>
           <hr class="spacing" />
           <h4>Maintenance (Pack Serain)</h4>
           <div class="other__content-item">
-            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-check icon"></i>
             <p>
               Mise à jour une fois par mois, 3h d'interventions par mois,
               sauvegarde manuelle des fichiers et de la base de données,
               conseil & formation, rapports.
             </p>
-            <div class="price-container">
-              <span><strong>175€</strong>/mois ou <strong>1750€</strong>/an</span>
+            <div class="price">
+              <div class="price-container">
+                175€<span>/mois</span>
+              </div>
+              <div class="price-container">
+                1750€<span>/an</span>
+              </div>
             </div>
           </div>
           <hr class="spacing" />
           <h4>Autre demande</h4>
           <div class="other__content-item">
-            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-check icon"></i>
             <p>
               Refonte technique ou refonte visuelle, conseils, formations,
               bootcamp, etc...
             </p>
             <div class="price-container">
-              <span><strong>Sur devis</strong></span>
+              <span>Sur devis</span>
             </div>
           </div>
         </div>
         <hr class="spacing" />
         <h4>Application Web</h4>
         <div class="other__content-item">
-          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-check icon"></i>
           <p>
             Création d'application web sur mesure, avec ou sans base de données, création de gestionnaire de stock, etc.
           </p>
           <div class="price-container">
-            <span><strong>Sur devis</strong></span>
+            <span>Sur devis</span>
           </div>
         </div>
         </div>

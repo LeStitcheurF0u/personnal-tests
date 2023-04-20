@@ -20,19 +20,15 @@
     <div id="matomo-opt-out"></div>
     <script src="https://matomo.mywebsoluce.fr/index.php?module=CoreAdminHome&action=optOutJS&divId=matomo-opt-out&language=auto&showIntro=1"></script>
     <div class="contact-form__item">
-      <label for="nom">Nom</label>
-      <input type="text" id="nom" name="nom" required />
+      <input type="text" id="nom" name="nom" placeholder='Votre nom' required />
     </div>
     <div class="contact-form__item">
-      <label for="prenom">Prénom</label>
-      <input type="text" id="prenom" name="prenom" required />
+      <input type="text" id="prenom" name="prenom" placeholder='Votre prénom' required />
     </div>
     <div class="contact-form__item">
-      <label for="mail">Email</label>
-      <input type="email" id="mail" name="mail" required />
+      <input type="email" id="mail" name="mail" required placeholder='Votre mail' />
     </div>
     <div class="contact-form__item">
-      <label for="subject">Sujet de votre message</label>
       <select name="subject" id="subject" required>
         <option value="0">Veuillez sélectionner un sujet</option>
         <option value="1">Demande de devis</option>
@@ -42,12 +38,11 @@
       </select>
     </div>
     <div class="contact-form__item">
-      <label for="message">Message</label>
-      <textarea name="message" id="message" required><?php if (isset($_SESSION['form'])) {
-                                                        echo $_SESSION['form']['message'];
-                                                        unset($_SESSION['form']);
-                                                      }
-                                                      ?></textarea>
+      <textarea name="message" id="message" placeholder='Votre message' required><?php if (isset($_SESSION['form'])) {
+                                                                                    echo $_SESSION['form']['message'];
+                                                                                    unset($_SESSION['form']);
+                                                                                  }
+                                                                                  ?></textarea>
     </div>
     <div class="contact-form__item">
       <input type="hidden" name="honeypot" />
