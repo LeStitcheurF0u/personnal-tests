@@ -1,0 +1,5 @@
+# Group 1
+User-agent: *
+
+
+Sitemap: https://www.mywebsoluce.fr/sitemap.xml

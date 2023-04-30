@@ -19,21 +19,20 @@ session_start();
   <meta property="og:url" content="https://www.mywebsoluce.fr/">
   <meta property="og:title" content="MyWebSoluce">
   <meta property="og:description" content="MyWebSoluce entreprise de création de sites web implenté dans le Finistère, en Bretagne">
-  <meta property="og:image" content="assets/img/bannière_mws.png">
+  <meta property="og:image" content="assets/img/bannière_mws.webp">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://www.mywebsoluce.fr/">
   <meta property="twitter:title" content="MyWebSoluce">
   <meta property="twitter:description" content="MyWebSoluce entreprise de création de sites web implenté dans le Finistère, en Bretagne">
-  <meta property="twitter:image" content="assets/img/bannière_mws.png">
+  <meta property="twitter:image" content="assets/img/bannière_mws.webp">
 
 
+  <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
   <link rel="stylesheet" href="css/style.css?ts=<?= time(); ?>" />
   <link rel="shortcut icon" href="assets/img/logo.webp" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
   <!-- Matomo -->
   <script>
     var _paq = window._paq = window._paq || [];
@@ -41,7 +40,7 @@ session_start();
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
     (function() {
-      var u = "//matomo.mywebsoluce.fr/";
+      var u = "//www.mywebsoluce.fr/matomo";
       _paq.push(['setTrackerUrl', u + 'matomo.php']);
       _paq.push(['setSiteId', '1']);
       var d = document,
@@ -135,7 +134,7 @@ session_start();
               <img src="assets/img/capsule.webp" alt="La capsule" loading="lazy" />
               <figcaption>
                 <span>La Capsule V3</span>
-                <a href="https://lacapsule.github.io/V3">Voir le projet</a>
+                <a href="https://lacapsule.app" target='_blank'>Voir le projet</a>
               </figcaption>
             </figure>
           </div>
@@ -144,7 +143,7 @@ session_start();
               <img src="assets/img/moco.webp" alt="Morlaix Communauté" loading="lazy" />
               <figcaption>
                 <span>Centre de ressource pour Morlaix Communauté</span>
-                <a href="https://moco.mywebsoluce.fr">Voir le projet</a>
+                <a href="https://moco.mywebsoluce.fr" target='_blank'>Voir le projet</a>
               </figcaption>
             </figure>
           </div>
@@ -153,7 +152,7 @@ session_start();
               <img src="assets/img/quizz.webp" alt="Quizz" loading="lazy" />
               <figcaption>
                 <span>Quizz créé pour une expérimentation IBEP</span>
-                <a href="https://lestitcheurf0u.github.io/Quizz/">Voir le projet</a>
+                <a href="https://lestitcheurf0u.github.io/Quizz/" target='_blank'>Voir le projet</a>
               </figcaption>
             </figure>
           </div>
@@ -162,7 +161,7 @@ session_start();
               <img src="assets/img/cdr_capsule.webp" alt="Centre de ressource La Capsule" loading="lazy" />
               <figcaption>
                 <span>Partie Back-End Centre de ressources La Capsule</span>
-                <a href="https://cdr.lacapsule.org">Voir le projet</a>
+                <a href="https://cdr.lacapsule.org" target='_blank'>Voir le projet</a>
               </figcaption>
             </figure>
           </div>
@@ -171,7 +170,7 @@ session_start();
               <img src="assets/img/absumm.webp" alt="Absumm" loading="lazy" />
               <figcaption>
                 <span>Site E-Commerce Absumm</span>
-                <a href="https://absumm.mywebsoluce.fr">Voir le projet</a>
+                <a href="https://absumm.mywebsoluce.fr" target='_blank'>Voir le projet</a>
               </figcaption>
             </figure>
           </div>
@@ -454,9 +453,8 @@ session_start();
     &copyMyWebSoluce - 2023 - Tous droits réservés
   </footer>
 
-  <script src="js/app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/swiper.js"></script>
   <script>
     const progressCircle = document.querySelector(".autoplay-progress svg");
     const progressContent = document.querySelector(".autoplay-progress span");
@@ -464,11 +462,6 @@ session_start();
     const swiper = new Swiper(".mySwiper", {
       speed: 600,
       loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      parallax: true,
       grabCursor: true,
       navigation: {
         nextEl: ".swiper-button-next",
