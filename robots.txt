@@ -1,5 +1,8 @@
 # Group 1
 User-agent: *
-
-
+Disallow: /clients/
+Disallow: /matomo/
+Disallow: /concepteur/
+Disallow: /reconditionnement/
+Disallow: /outils/
 Sitemap: https://www.mywebsoluce.fr/sitemap.xml
